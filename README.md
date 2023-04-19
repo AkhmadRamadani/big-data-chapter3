@@ -2,6 +2,48 @@
 ### **Kelas** : TI - 3B
 
   
+Kode 1:
+
+-   `sc` adalah objek SparkContext yang digunakan untuk menghubungkan aplikasi dengan cluster Spark.
+-   `accumulator` adalah method yang digunakan untuk membuat objek variabel yang dapat diakumulasi (dikumpulkan) pada semua node yang berjalan di cluster Spark.
+-   `parallelize` adalah method yang digunakan untuk membuat RDD dari sebuah collection pada node master, dan kemudian menyebar (distribute) RDD tersebut ke node-node lain pada cluster Spark.
+-   `lambda` adalah cara untuk membuat anonymous function (fungsi tanpa nama) pada Python.
+-   `value` adalah method yang digunakan untuk mengembalikan nilai dari objek accumulator.
+
+Kode 2:
+
+-   `broadcast` adalah method yang digunakan untuk mendistribusikan sebuah nilai (value) ke setiap node pada cluster Spark.
+-   `list` adalah built-in function pada Python untuk membuat sebuah list.
+-   `range` adalah built-in function pada Python untuk membuat sebuah range (daftar bilangan).
+
+Kode 3:
+
+-   `textFile` adalah method yang digunakan untuk membaca file teks dan membuat RDD dari setiap baris pada file tersebut.
+-   `filter` adalah method yang digunakan untuk menyaring RDD dan mengembalikan RDD yang hanya berisi elemen yang memenuhi kriteria tertentu.
+-   `cache` adalah method yang digunakan untuk menyimpan RDD di dalam memory, sehingga dapat digunakan secara cepat di aksi (action) yang akan datang.
+-   `count` adalah method yang digunakan untuk menghitung jumlah elemen pada RDD.
+
+Kode 4:
+
+-   `map` adalah method yang digunakan untuk menerapkan suatu fungsi pada setiap elemen RDD dan mengembalikan RDD baru dengan hasil yang telah diubah.
+-   `collect` adalah method yang digunakan untuk mengambil semua elemen RDD dan mengembalikan sebuah list.
+-   `len` adalah built-in function pada Python untuk menghitung panjang dari sebuah objek.
+-   `keys` adalah method yang digunakan untuk mengambil kunci dari setiap elemen pada RDD yang berbentuk key-value pairs.
+-   `values` adalah method yang digunakan untuk mengambil nilai dari setiap elemen pada RDD yang berbentuk key-value pairs.
+
+Kode 5:
+
+-   `defaultParallelism` adalah method yang digunakan untuk mengembalikan jumlah partisi yang akan digunakan oleh RDD pada setiap operasi default.
+-   `getNumPartitions` adalah method yang digunakan untuk mengembalikan jumlah partisi pada sebuah RDD.
+-   `mapPartitionsWithIndex` adalah method yang digunakan untuk menerapkan suatu fungsi pada setiap partisi RDD beserta indeksnya.
+-   `repartition` adalah method yang digunakan untuk mengubah jumlah partisi RDD dengan mengacak ulang elemen dan mendistribusikan ulang elemen ke dalam partisi yang baru.
+-   `coalesce` adalah method yang digunakan untuk mengurangi jumlah partisi RDD tanpa mengubah isi elemen pada RDD.
+-   `toDebugString` adalah method yang digunakan untuk mengembalikan informasi tentang RDD dan dependensi RDD dalam bentuk string.
+
+Kode 6:
+
+-   `flatMap` adalah method yang digunakan untuk menerapkan suatu fungsi pada setiap elemen RDD, mengembalikan RDD baru dengan hasil yang telah diubah, dan menggabungkan setiap list hasil fungsi menjadi satu RDD.
+-   `reduceByKey` adalah method yang digunakan untuk menggabungkan setiap nilai pada RDD yang memiliki kunci yang sama menggunakan suatu fungsi
 
 <table>
 
